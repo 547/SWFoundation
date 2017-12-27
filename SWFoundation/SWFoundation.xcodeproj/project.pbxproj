@@ -6,6 +6,32 @@
 	objectVersion = 48;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		14B650AA1FF3A8BC00434AE8 /* CommonCryptoModuleMap */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 14B650AB1FF3A8BC00434AE8 /* Build configuration list for PBXAggregateTarget "CommonCryptoModuleMap" */;
+			buildPhases = (
+				14B650AE1FF3A8F500434AE8 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = CommonCryptoModuleMap;
+			productName = CommonCryptoModuleMap;
+		};
+		14B650B31FF3AC1100434AE8 /* SWAggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 14B650B41FF3AC1100434AE8 /* Build configuration list for PBXAggregateTarget "SWAggregate" */;
+			buildPhases = (
+				14B650B91FF3AC2300434AE8 /* ShellScript */,
+			);
+			dependencies = (
+				14B650B81FF3AC1A00434AE8 /* PBXTargetDependency */,
+			);
+			name = SWAggregate;
+			productName = SWAggregate;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		14B650711FF3929A00434AE8 /* SWFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B650671FF3929A00434AE8 /* SWFoundation.framework */; };
 		14B650761FF3929A00434AE8 /* SWFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B650751FF3929A00434AE8 /* SWFoundationTests.swift */; };
@@ -34,10 +60,25 @@
 		14B650A41FF3942300434AE8 /* NSObjectExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14B650851FF3935200434AE8 /* NSObjectExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		14B650A51FF3942600434AE8 /* UserDefaultsExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14B650871FF3935300434AE8 /* UserDefaultsExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		14B650A61FF3942800434AE8 /* CGFloatExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14B650811FF3932C00434AE8 /* CGFloatExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		14B650B21FF3AB8100434AE8 /* SWFoundation.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 14B650B11FF3AB8100434AE8 /* SWFoundation.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		14B650721FF3929A00434AE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14B6505E1FF3929A00434AE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14B650661FF3929A00434AE8;
+			remoteInfo = SWFoundation;
+		};
+		14B650AF1FF3A9B900434AE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14B6505E1FF3929A00434AE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14B650AA1FF3A8BC00434AE8;
+			remoteInfo = CommonCryptoModuleMap;
+		};
+		14B650B71FF3AC1A00434AE8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 14B6505E1FF3929A00434AE8 /* Project object */;
 			proxyType = 1;
@@ -65,6 +106,7 @@
 		14B650911FF3937700434AE8 /* BoolExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolExtension.swift; sourceTree = "<group>"; };
 		14B650921FF3937700434AE8 /* ArrayExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
 		14B650931FF3937700434AE8 /* NumberExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberExtension.swift; sourceTree = "<group>"; };
+		14B650B11FF3AB8100434AE8 /* SWFoundation.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SWFoundation.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +131,7 @@
 		14B6505D1FF3929A00434AE8 = {
 			isa = PBXGroup;
 			children = (
+				14B650B11FF3AB8100434AE8 /* SWFoundation.podspec */,
 				14B650691FF3929A00434AE8 /* SWFoundation */,
 				14B650741FF3929A00434AE8 /* SWFoundationTests */,
 				14B650681FF3929A00434AE8 /* Products */,
@@ -172,6 +215,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				14B650B01FF3A9B900434AE8 /* PBXTargetDependency */,
 			);
 			name = SWFoundation;
 			productName = SWFoundation;
@@ -215,6 +259,14 @@
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
+					14B650AA1FF3A8BC00434AE8 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					14B650B31FF3AC1100434AE8 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 14B650611FF3929A00434AE8 /* Build configuration list for PBXProject "SWFoundation" */;
@@ -231,6 +283,8 @@
 			targets = (
 				14B650661FF3929A00434AE8 /* SWFoundation */,
 				14B6506F1FF3929A00434AE8 /* SWFoundationTests */,
+				14B650AA1FF3A8BC00434AE8 /* CommonCryptoModuleMap */,
+				14B650B31FF3AC1100434AE8 /* SWAggregate */,
 			);
 		};
 /* End PBXProject section */
@@ -240,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14B650B21FF3AB8100434AE8 /* SWFoundation.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +306,35 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14B650AE1FF3A8F500434AE8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This if-statement means we'll only run the main script if the CommonCryptoModuleMap directory doesn't exist\n# Because otherwise the rest of the script causes a full recompile for anything where CommonCrypto is a dependency\n# Do a \"Clean Build Folder\" to remove this directory and trigger the rest of the script to run\nif [ -d \"${BUILT_PRODUCTS_DIR}/CommonCryptoModuleMap\" ]; then\necho \"${BUILT_PRODUCTS_DIR}/CommonCryptoModuleMap directory already exists, so skipping the rest of the script.\"\nexit 0\nfi\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/CommonCryptoModuleMap\"\ncat <<EOF > \"${BUILT_PRODUCTS_DIR}/CommonCryptoModuleMap/module.modulemap\"\nmodule CommonCrypto [system] {\n    header \"${SDKROOT}/usr/include/CommonCrypto/CommonCrypto.h\"\n    export *\n}\nEOF";
+		};
+		14B650B91FF3AC2300434AE8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FMK_NAME=${PROJECT_NAME}\n\n# Install dir will be the final output to the framework.\n\n# The following line create it in the root folder of the current project.\n\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\n\nWRK_DIR=build\n\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\n\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# -configuration ${CONFIGURATION}\n\n# Clean and Building both architectures.\n\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos clean build\n\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator clean build\n\n# Cleaning the oldest.\n\nif [ -d \"${INSTALL_DIR}\" ]\n\nthen\n\nrm -rf \"${INSTALL_DIR}\"\n\nfi\n\nmkdir -p \"${INSTALL_DIR}\"\n\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\n\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"\n\nopen \"${INSTALL_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		14B650621FF3929A00434AE8 /* Sources */ = {
@@ -287,6 +371,16 @@
 			isa = PBXTargetDependency;
 			target = 14B650661FF3929A00434AE8 /* SWFoundation */;
 			targetProxy = 14B650721FF3929A00434AE8 /* PBXContainerItemProxy */;
+		};
+		14B650B01FF3A9B900434AE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14B650AA1FF3A8BC00434AE8 /* CommonCryptoModuleMap */;
+			targetProxy = 14B650AF1FF3A9B900434AE8 /* PBXContainerItemProxy */;
+		};
+		14B650B81FF3AC1A00434AE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14B650661FF3929A00434AE8 /* SWFoundation */;
+			targetProxy = 14B650B71FF3AC1A00434AE8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -414,6 +508,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "${BUILT_PRODUCTS_DIR}/CommonCryptoModuleMap";
 				INFOPLIST_FILE = SWFoundation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -422,6 +517,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.seven.SWFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -438,6 +534,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "${BUILT_PRODUCTS_DIR}/CommonCryptoModuleMap";
 				INFOPLIST_FILE = SWFoundation/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -446,6 +543,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.seven.SWFoundation;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -479,6 +577,38 @@
 			};
 			name = Release;
 		};
+		14B650AC1FF3A8BC00434AE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		14B650AD1FF3A8BC00434AE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		14B650B51FF3AC1100434AE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		14B650B61FF3AC1100434AE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -505,6 +635,24 @@
 			buildConfigurations = (
 				14B6507F1FF3929A00434AE8 /* Debug */,
 				14B650801FF3929A00434AE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14B650AB1FF3A8BC00434AE8 /* Build configuration list for PBXAggregateTarget "CommonCryptoModuleMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B650AC1FF3A8BC00434AE8 /* Debug */,
+				14B650AD1FF3A8BC00434AE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14B650B41FF3AC1100434AE8 /* Build configuration list for PBXAggregateTarget "SWAggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B650B51FF3AC1100434AE8 /* Debug */,
+				14B650B61FF3AC1100434AE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

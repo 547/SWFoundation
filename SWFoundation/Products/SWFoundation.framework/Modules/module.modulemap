@@ -1,0 +1,11 @@
+framework module SWFoundation {
+  umbrella header "SWFoundation.h"
+
+  export *
+  module * { export * }
+}
+
+module SWFoundation.Swift {
+    header "SWFoundation-Swift.h"
+    requires objc
+}
