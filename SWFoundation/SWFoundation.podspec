@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "SWFoundation"
-s.version          = "1.0.1"
+s.version          = "1.0.2"
 s.summary          = "Foundation extensions"
 s.homepage         = "https://github.com/547/SWFoundation"
 s.license          = 'MIT'
